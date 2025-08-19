@@ -1,178 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Pricing</title>
-    <link rel="stylesheet" href="styles.css"> 
-</head>
-<body>
-    <h1>PLANS</h1>
-    <header>
-        <h1>Our Pricing Plans</h1>
-        <p>Choose the right plan for your bussiness</p>
-        <div class="select-btn">
-            <button onclick="openMonthly()">Monthly</button>
-            <button onclick="openYearly()">Yearly</button>
+<html>
+    <head>
+        <title>Weather App</title>
+        <link rel="stylesheet" href="style.css">
+    
+    </head>
+
+    <body>
+        <h1 id="intro">Welcome to Weather App</h1>
+        <div id="searchContainer">
+            <input class="searchControl" type="text" placeholder="Please Enter City Name" id="searchInput">
+            <button class="searchControl" id="searchBtn">Go!</button>
         </div>
-    </header>
-    <section id="monthly-plans" style="display:none;" >
-        <div class="pricing-plan">
-            <h2>Free Trail</h2>
-            <p class="price">₹ <span>0</span>/month</p>
-            <ul>
-                <li>Include 1000 Leads & Contact Credit.</li>
-                <li>Aditional Contact ₹ 1800.00/1000 credit.</li>
-                <li>Unlimited followup,task and activity.</li>
-                <li>Include 1000 sms /Email Marketing.</li>
-                <li>Additional sms/Eail ₹1400.00/1000 credit.</li>
-                <li>Chat support</li>
-                <li>Lifetime Validity</li>
-                <li>Yealy renewal</li>
-            </ul>
-            <button class="upgrade-btn">Upgrade</button>
-            <p>Price inclusive of all taxes</p>
-        </div>
-        <div class="pricing-plan">
-            <h2>StartUp</h2>
-            <p class="price">₹ <span>199</span>/month</p>
-            <ul>
-                <li>Include 1000 Leads & Contact Credit.</li>
-                <li>Aditional Contact ₹ 1800.00/1000 credit.</li>
-                <li>Unlimited followup,task and activity.</li>
-                <li>Include 1000 sms /Email Marketing.</li>
-                <li>Additional sms/Eail ₹1400.00/1000 credit.</li>
-                <li>Chat support</li>
-                <li>Lifetime Validity</li>
-                <li>Yealy renewal</li>
-            </ul>
-            <button class="upgrade-btn">Upgrade</button>
-            <p>Price inclusive of all taxes</p>
-        </div>
-        <div class="pricing-plan">
-            <h2>Essential</h2>
-            <p class="price">₹ <span>299</span>/month</p>
-            <ul>
-                <li>Include 1000 Leads & Contact Credit.</li>
-                <li>Aditional Contact ₹ 1800.00/1000 credit.</li>
-                <li>Unlimited followup,task and activity.</li>
-                <li>Include 1000 sms /Email Marketing.</li>
-                <li>Additional sms/Eail ₹1400.00/1000 credit.</li>
-                <li>Chat support</li>
-                <li>Lifetime Validity</li>
-                <li>Yealy renewal</li>
-            </ul>
-            <button class="upgrade-btn">Upgrade</button>
-            <p>Price inclusive of all taxes</p>
-        </div>
-        <div class="pricing-plan">
-            <h2>Essential</h2>
-            <p class="price">₹ <span>399</span>/month</p>
-            <ul>
-                <li>Include 1000 Leads & Contact Credit.</li>
-                <li>Aditional Contact ₹ 1800.00/1000 credit.</li>
-                <li>Unlimited followup,task and activity.</li>
-                <li>Include 1000 sms /Email Marketing.</li>
-                <li>Additional sms/Eail ₹1400.00/1000 credit.</li>
-                <li>Chat support</li>
-                <li>Lifetime Validity</li>
-                <li>Yealy renewal</li>
-            </ul>
-            <button class="upgrade-btn">Upgrade</button>
-            <p>Price inclusive of all taxes</p>
-        </div>
-        <div class="pricing-plan">
-            <h2>Enterprise</h2>
-            <p class="price">₹ <span>499</span>/month</p>
-            <ul>
-                <li>Include 1000 Leads & Contact Credit.</li>
-                <li>Aditional Contact ₹ 1800.00/1000 credit.</li>
-                <li>Unlimited followup,task and activity.</li>
-                <li>Include 1000 sms /Email Marketing.</li>
-                <li>Additional sms/Eail ₹1400.00/1000 credit.</li>
-                <li>Chat support</li>
-                <li>Lifetime Validity</li>
-                <li>Yealy renewal</li>
-            </ul>
-            <button class="upgrade-btn">Upgrade</button>
-            <p>Price inclusive of all taxes</p>
-        </div>
-    </section>
-    <section id="yearly-plans" style="display: none;" >
-        <div class="pricing-plan">
-            <h2>Free Trail</h2>
-            <p class="price">₹ <span>0</span>/year</p>
-            <ul>
-                <li>Include 1000 Leads & Contact Credit.</li>
-                <li>Aditional Contact ₹ 1800.00/1000 credit.</li>
-                <li>Unlimited followup,task and activity.</li>
-                <li>Include 1000 sms /Email Marketing.</li>
-                <li>Additional sms/Eail ₹1400.00/1000 credit.</li>
-                <li>Chat support</li>
-                <li>Lifetime Validity</li>
-                <li>Yealy renewal</li>
-            </ul>
-            <button class="upgrade-btn">Upgrade</button>
-            <p>Price inclusive of all taxes</p>
-        </div>
-        <div class="pricing-plan">
-            <h2>StartUp</h2>
-            <p class="price">₹ <span>1999</span>/year</p>
-            <ul>
-                <li>Include 1000 Leads & Contact Credit.</li>
-                <li>Aditional Contact ₹ 1800.00/1000 credit.</li>
-                <li>Unlimited followup,task and activity.</li>
-                <li>Include 1000 sms /Email Marketing.</li>
-                <li>Additional sms/Eail ₹1400.00/1000 credit.</li>
-                <li>Chat support</li>
-                <li>Lifetime Validity</li>
-                <li>Yealy renewal</li>
-            </ul>
-            <button class="upgrade-btn">Upgrade</button>
-            <p>Price inclusive of all taxes</p>
-        </div>
-        <div class="pricing-plan">
-            <h2>Essential</h2>
-            <p class="price">₹ <span>2999</span>/year</p>
-            <ul>
-                <li>Include 1000 Leads & Contact Credit.</li>
-                <li>Aditional Contact ₹ 1800.00/1000 credit.</li>
-                <li>Unlimited followup,task and activity.</li>
-                <li>Include 1000 sms /Email Marketing.</li>
-                <li>Additional sms/Eail ₹1400.00/1000 credit.</li>
-                <li>Chat support</li>
-                <li>Lifetime Validity</li>
-                <li>Yealy renewal</li>
-            </ul>
-            <button class="upgrade-btn">Upgrade</button>
-            <p>Price inclusive of all taxes</p>
-        </div>
-        <div class="pricing-plan">
-            <h2>Enterprise</h2>
-            <p class="price">₹ <span>3999</span>/year</p>
-            <ul>
-                <li>Include 1000 Leads & Contact Credit.</li>
-                <li>Aditional Contact ₹ 1800.00/1000 credit.</li>
-                <li>Unlimited followup,task and activity.</li>
-                <li>Include 1000 sms /Email Marketing.</li>
-                <li>Additional sms/Eail ₹1400.00/1000 credit.</li>
-                <li>Chat support</li>
-                <li>Lifetime Validity</li>
-                <li>Yealy renewal</li>
-            </ul>
-            <button class="upgrade-btn">Upgrade</button>
-            <p>Price inclusive of all taxes</p>
-        </div>
-    </section>
-    <script>
-        function openMonthly(){
-            document.getElementById("monthly-plans").style.display="flex"
-            document.getElementById("yearly-plans").style.display="none"
-        }
-        function openYearly(){
-            document.getElementById("yearly-plans").style.display="flex"
-            document.getElementById("monthly-plans").style.display="none"
-        }
-    </script>
-</body>
+        <br>
+        <div id="weatherContainer">
+            <div id="weatherDescription">
+                <h1 id="cityHeader"></h1>
+                <div id="weatherMain">
+                    <div id="temperature"></div>
+                    <div id="weatherDescriptionHeader"></div>
+                    <div><img id="documentIconImg"></div>
+                </div>
+                <hr>
+                <div id="windSpeed" class="bottom-details"></div>
+                <div id="humidity" class="bottom-details"></div>
+
+            </div>
+
+        </div> 
+    </body>
+
+    <script src="script.js"></script>
 </html>
